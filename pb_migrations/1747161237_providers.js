@@ -7,6 +7,7 @@ migrate((app) => {
 
     providersData.forEach(row => {
         let record = new Record(providers)
+        record.set("id", row.id)
         record.set("created", row.created)
         record.set("domains", row.domains)
         record.set("name", row.name)
@@ -15,6 +16,7 @@ migrate((app) => {
 
     providerRecordsData.forEach(row => {
         let record = new Record(provider_records)
+        record.set("id", row.id)
         record.set("created", row.created)
         record.set("provider", row.provider)
         record.set("record", row.record)
