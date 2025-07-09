@@ -248,6 +248,20 @@
       {
         "autogeneratePattern": "",
         "hidden": false,
+        "id": "text1579384326",
+        "max": 0,
+        "min": 0,
+        "name": "name",
+        "pattern": "",
+        "presentable": true,
+        "primaryKey": false,
+        "required": true,
+        "system": false,
+        "type": "text"
+      },
+      {
+        "autogeneratePattern": "",
+        "hidden": false,
         "id": "text2402650999",
         "max": 0,
         "min": 0,
@@ -393,7 +407,8 @@
     "indexes": [
       "CREATE INDEX `idx_zcoAAqqaZx` ON `handlers` (`from_email`)",
       "CREATE INDEX `idx_wJ49agEk7J` ON `handlers` (`template`)",
-      "CREATE INDEX `idx_sDW356nVcE` ON `handlers` (`domains`)"
+      "CREATE INDEX `idx_sDW356nVcE` ON `handlers` (`domains`)",
+      "CREATE INDEX `idx_XIiU7RWUD9` ON `handlers` (`name`)"
     ],
     "system": false
   },
@@ -419,6 +434,20 @@
         "primaryKey": true,
         "required": true,
         "system": true,
+        "type": "text"
+      },
+      {
+        "autogeneratePattern": "",
+        "hidden": false,
+        "id": "text1579384326",
+        "max": 0,
+        "min": 0,
+        "name": "name",
+        "pattern": "",
+        "presentable": true,
+        "primaryKey": false,
+        "required": true,
+        "system": false,
         "type": "text"
       },
       {
@@ -500,7 +529,8 @@
     ],
     "indexes": [
       "CREATE INDEX `idx_GvdwUHbt8x` ON `provider_records` (`provider`)",
-      "CREATE INDEX `idx_l0kxXURF1a` ON `provider_records` (`type`)"
+      "CREATE INDEX `idx_l0kxXURF1a` ON `provider_records` (`type`)",
+      "CREATE INDEX `idx_HL5HPAIxcr` ON `templates` (`name`)"
     ],
     "system": false
   },
