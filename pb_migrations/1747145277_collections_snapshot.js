@@ -1027,7 +1027,7 @@ migrate((app) => {
         {
           "autogeneratePattern": "",
           "hidden": false,
-          "id": "text3616002756",
+          "id": "email3616002756",
           "max": 0,
           "min": 0,
           "name": "to",
@@ -1036,12 +1036,12 @@ migrate((app) => {
           "primaryKey": false,
           "required": true,
           "system": false,
-          "type": "text"
+          "type": "email"
         },
         {
           "autogeneratePattern": "",
           "hidden": false,
-          "id": "text3803249643",
+          "id": "email3803249643",
           "max": 0,
           "min": 0,
           "name": "reply_to",
@@ -1050,7 +1050,7 @@ migrate((app) => {
           "primaryKey": false,
           "required": false,
           "system": false,
-          "type": "text"
+          "type": "email"
         },
         {
           "hidden": false,
