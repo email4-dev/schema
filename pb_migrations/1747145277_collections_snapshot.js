@@ -1006,7 +1006,7 @@ migrate((app) => {
           "name": "from_email",
           "onlyDomains": [],
           "presentable": false,
-          "required": true,
+          "required": false,
           "system": false,
           "type": "email"
         },
