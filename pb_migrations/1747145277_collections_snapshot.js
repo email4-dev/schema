@@ -900,6 +900,29 @@ migrate((app) => {
           "type": "relation"
         },
         {
+          "autogeneratePattern": "",
+          "hidden": false,
+          "id": "text2402650999",
+          "max": 0,
+          "min": 0,
+          "name": "honeypot",
+          "pattern": "",
+          "presentable": false,
+          "primaryKey": false,
+          "required": false,
+          "system": false,
+          "type": "text"
+        },
+        {
+          "hidden": false,
+          "id": "bool401937859",
+          "name": "altcha",
+          "presentable": false,
+          "required": false,
+          "system": false,
+          "type": "bool"
+        },
+        {
           "hidden": false,
           "id": "bool2712340354",
           "name": "unprotected",
@@ -957,20 +980,6 @@ migrate((app) => {
           "primaryKey": true,
           "required": true,
           "system": true,
-          "type": "text"
-        },
-        {
-          "autogeneratePattern": "",
-          "hidden": false,
-          "id": "text2402650999",
-          "max": 0,
-          "min": 0,
-          "name": "honeypot",
-          "pattern": "",
-          "presentable": false,
-          "primaryKey": false,
-          "required": false,
-          "system": false,
           "type": "text"
         },
         {
@@ -1051,15 +1060,6 @@ migrate((app) => {
           "required": false,
           "system": false,
           "type": "email"
-        },
-        {
-          "hidden": false,
-          "id": "bool401937859",
-          "name": "altcha",
-          "presentable": false,
-          "required": false,
-          "system": false,
-          "type": "bool"
         },
         {
           "exceptDomains": [],
