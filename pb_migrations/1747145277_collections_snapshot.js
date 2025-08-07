@@ -62,6 +62,48 @@ migrate((app) => {
           "type": "text"
         },
         {
+            "autogeneratePattern": "",
+            "hidden": false,
+            "id": "text2826323267",
+            "max": 0,
+            "min": 0,
+            "name": "template_subject",
+            "pattern": "",
+            "presentable": false,
+            "primaryKey": false,
+            "required": false,
+            "system": false,
+            "type": "text"
+        },
+        {
+            "autogeneratePattern": "",
+            "hidden": false,
+            "id": "text2732268277",
+            "max": 0,
+            "min": 0,
+            "name": "template_code",
+            "pattern": "",
+            "presentable": false,
+            "primaryKey": false,
+            "required": false,
+            "system": false,
+            "type": "text"
+        },
+        {
+            "autogeneratePattern": "",
+            "hidden": false,
+            "id": "text3997535658",
+            "max": 0,
+            "min": 0,
+            "name": "template_text",
+            "pattern": "",
+            "presentable": false,
+            "primaryKey": false,
+            "required": false,
+            "system": false,
+            "type": "text"
+        },
+        {
           "hidden": false,
           "id": "autodate2990389176",
           "name": "created",
@@ -1297,113 +1339,6 @@ migrate((app) => {
       "type": "base",
       "updateRule": null,
       "viewRule": ""
-    },
-    {
-      "createRule": null,
-      "deleteRule": null,
-      "fields": [
-        {
-          "autogeneratePattern": "[a-z0-9]{15}",
-          "hidden": false,
-          "id": "text3208210256",
-          "max": 15,
-          "min": 15,
-          "name": "id",
-          "pattern": "^[a-z0-9]+$",
-          "presentable": false,
-          "primaryKey": true,
-          "required": true,
-          "system": true,
-          "type": "text"
-        },
-        {
-          "autogeneratePattern": "",
-          "hidden": false,
-          "id": "text4224597626",
-          "max": 0,
-          "min": 0,
-          "name": "subject",
-          "pattern": "",
-          "presentable": true,
-          "primaryKey": false,
-          "required": true,
-          "system": false,
-          "type": "text"
-        },
-        {
-          "autogeneratePattern": "",
-          "hidden": false,
-          "id": "text1997877400",
-          "max": 0,
-          "min": 0,
-          "name": "code",
-          "pattern": "",
-          "presentable": false,
-          "primaryKey": false,
-          "required": false,
-          "system": false,
-          "type": "text"
-        },
-        {
-          "autogeneratePattern": "",
-          "hidden": false,
-          "id": "text999008199",
-          "max": 0,
-          "min": 0,
-          "name": "text",
-          "pattern": "",
-          "presentable": false,
-          "primaryKey": false,
-          "required": false,
-          "system": false,
-          "type": "text"
-        },
-        {
-          "hidden": false,
-          "id": "select2363381545",
-          "maxSelect": 1,
-          "name": "type",
-          "presentable": false,
-          "required": true,
-          "system": false,
-          "type": "select",
-          "values": [
-            "html",
-            "mjml"
-          ]
-        },
-        {
-          "hidden": false,
-          "id": "autodate2990389176",
-          "name": "created",
-          "onCreate": true,
-          "onUpdate": false,
-          "presentable": false,
-          "system": false,
-          "type": "autodate"
-        },
-        {
-          "hidden": false,
-          "id": "autodate3332085495",
-          "name": "updated",
-          "onCreate": true,
-          "onUpdate": true,
-          "presentable": false,
-          "system": false,
-          "type": "autodate"
-        }
-      ],
-      "id": "pbc_184785686",
-      "indexes": [
-        "CREATE INDEX `idx_T9TnLNnaUx` ON `templates` (`subject`)",
-        "CREATE INDEX `idx_ueKGvjkeWM` ON `templates` (`type`)"
-      ],
-      "listRule": null,
-      "name": "templates",
-      "system": false,
-      "type": "base",
-      "updateRule": null,
-      "viewRule": null
     }
   ];
 
